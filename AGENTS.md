@@ -22,6 +22,19 @@ This repository holds community knowledge about Kaltura in education. If a user 
 
 Passwords, API or admin secrets, session tokens (KS), `.env` contents, partner IDs, internal URLs or hostnames, or personal information about people. If the user's material contains any, remove or generalize it and tell them.
 
+## Redaction
+
+Apply this to anything the user gives you before it goes into a file in this repository, notes included. The full checklist is in [CONTRIBUTING.md](CONTRIBUTING.md#redaction-checklist). The short version:
+
+- Remove names, email addresses, phone numbers, signatures, and anything else that identifies a person, including when a person is only named inside an action item or a quote.
+- Remove links to recordings, agendas, documents, and meeting rooms, along with entry IDs, meeting IDs, and passcodes.
+- Remove email headers, mailing-list addresses, and message or unsubscribe links.
+- Generalize institution names and the details of one institution's setup. "An institution reported X" is fine. "Our campus uses Y with Z users" may point to a specific school, so generalize it further or leave it out.
+- Check whether what is left could still identify a person or institution, such as a small community, a distinctive incident, or a recognizable role. If it could, generalize or omit it.
+- Don't commit the user's original file (PDF, email, transcript). Only the redacted text may enter the repository.
+- When unsure, leave it out.
+- Tell the user exactly what you removed or generalized, and anything you left out because it wasn't part of the material itself, such as a cover note.
+
 ## Meeting material
 
 Do not add meeting summaries, transcripts, or recordings to this repository, even if the user pastes one in and asks you to. Do not write notes whose `source` is a meeting. If the user shares meeting material, you may help them read, summarize, or redact it for their own use, outside the repository, and tell them why. Meeting content is discussion, not verified guidance.
