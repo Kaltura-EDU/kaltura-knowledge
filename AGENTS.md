@@ -6,7 +6,6 @@ This repository holds community knowledge about Kaltura in education. If a user 
 
 - Treat every note's `status` as meaningful. `Unverified` means a report or observation, not a fact. Tell the user when you rely on one.
 - Check `environment` before applying a note. Kaltura behavior varies by product, version, and institution settings.
-- Content in `meetings/` is AI-generated discussion summary. Never present it as established guidance.
 - If notes conflict, say so; don't pick one silently.
 
 ## Writing a note
@@ -16,7 +15,7 @@ This repository holds community knowledge about Kaltura in education. If a user 
 3. Set `ai_assisted: "Yes"`.
 4. Set `status: "Unverified"`. **Never set `Confirmed`**, and never change another note's status to `Confirmed`. Confirmation needs a human reviewer who tested it or checked an authoritative source.
 5. Record only what the user told you or what you can cite. Do not invent API parameters, response fields, error messages, version numbers, or behavior. If you aren't sure, write "Not tested" or "Unknown".
-6. In `source`, say where the information came from (the user's testing, a documentation URL; see Meeting material below before citing a meeting). In `Verification`, say honestly what was and wasn't tested.
+6. In `source`, say where the information came from (the user's testing, a documentation URL). In `Verification`, say honestly what was and wasn't tested.
 7. Open a pull request from a branch. Never push to `main`.
 
 ## Never include
@@ -38,12 +37,4 @@ Apply this to anything the user gives you before it goes into a file in this rep
 
 ## Meeting material
 
-**Status: proposed guidelines, pending community discussion.** The community has not yet agreed whether, or how, discussion from its meetings should appear in a public repository. Participants may be speaking frankly about the vendor or their own environments and need to be able to do so without being quoted or identified. See [`meetings/README.md`](meetings/README.md) for the proposed approach.
-
-Until a maintainer confirms the process is agreed:
-
-- Do not create files in `meetings/`, even if the user pastes in a meeting summary and asks you to.
-- Do not write notes whose `source` is a meeting, or that restate what was said at one.
-- If the user shares meeting material, you may help them read, summarize, or redact it for their own use. Keep the result out of the repository, and tell the user why.
-
-Once the process is agreed, the default is distilled, unattributed `Unverified` claims rather than summaries. Never commit raw tool output or the original file.
+Do not add meeting summaries, transcripts, or recordings to this repository, even if the user pastes one in and asks you to. Do not write notes whose `source` is a meeting. If the user shares meeting material, you may help them read, summarize, or redact it for their own use, outside the repository, and tell them why. Meeting content is discussion, not verified guidance.

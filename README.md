@@ -22,7 +22,6 @@ Kaltura behavior also varies by version, product (KMC, KAF, MediaSpace, REACH), 
 | Folder | Contents |
 |---|---|
 | [`notes/`](notes) | Curated knowledge notes, organized by topic |
-| [`meetings/`](meetings) | AI-generated summaries of community meetings. These are conversation, not guidance. |
 | [`templates/`](templates) | The knowledge note template |
 
 ## Getting involved
